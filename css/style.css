@@ -1,0 +1,166 @@
+body {
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #042e46;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.loginContent {
+    background-color: #24353f71;
+    box-shadow: rgba(136, 165, 191, 0.8) 6px 2px 16px 0px, rgba(23, 162, 184, 0.8) -6px -2px 16px 0px;
+    border-radius: 13px;
+    animation-name: slide;
+    animation-duration: 1.7s;
+    animation-iteration-count: 1;
+}
+
+@keyframes slide {
+    0% {
+        transform: translate(200%);
+        opacity: 0;
+    }
+    15% {
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0%);
+        opacity: 1;
+    }
+}
+
+.form-control {
+    margin-top: 15px !important;
+    margin-bottom: 20px !important;
+    color: #fff !important;
+}
+
+#signInBtn {
+    animation-name: slide;
+    animation-duration: 1.3s;
+    animation-iteration-count: 1;
+}
+
+h1 {
+    color: #17A2B8;
+    animation-name: slideMe;
+    animation-duration: 1.8s;
+    animation-iteration-count: 1;
+}
+
+@keyframes slideMe {
+    0% {
+        transform: translateY(-500%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+h6 {
+    color: #fff;
+    animation-name: slide;
+    animation-duration: 1.6s;
+    animation-iteration-count: 1;
+}
+
+input::placeholder {
+    color: #B6B6B6 !important;
+}
+
+input {
+    border: 0 !important;
+    border-bottom: 2px solid gray !important;
+}
+
+input:focus {
+    border-bottom: 2px solid #17A2B8 !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.hiddenAlert {
+    display: none;
+    color: red;
+}
+
+.welcome-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.header-box {
+    box-shadow: -5px 2px 54px -9px rgb(0 0 0);
+}
+
+.welcome-box {
+    box-shadow: -5px 2px 54px -9px rgb(0 0 0);
+}
+
+.logOut {
+    color: rgb(179, 176, 176);
+    font-size: 20px;
+    transition: color background-color .3s;
+}
+
+.logOut:hover {
+    color: #fff;
+}
+
+.sign-up-hover {
+    color: white;
+    transition: color .2s;
+}
+
+.sign-up-hover:hover {
+    color: #17A2B8;
+    text-decoration: none;
+}
+
+#userEmailSignIn {
+    animation-name: slide;
+    animation-duration: 1.1s;
+    animation-iteration-count: 1;
+}
+
+#passWordSignIn {
+    animation-name: slide;
+    animation-duration: 1.2s;
+    animation-iteration-count: 1;
+}
+
+#userNameSignUp {
+    animation-name: slide;
+    animation-duration: 1.2s;
+    animation-iteration-count: 1;
+}
+
+#userEmailSignUp {
+    animation-name: slide;
+    animation-duration: 1.3s;
+    animation-iteration-count: 1;
+}
+
+#userPasswordSignUp {
+    animation-name: slide;
+    animation-duration: 1.4s;
+    animation-iteration-count: 1;
+}
+
+#signUpBtn {
+    animation-name: slide;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+}
+
+.Logo-link {
+    font-size: 30px;
+    color: #fff;
+    transition: color .5s;
+    text-decoration: none !important;
+}
+
+.Logo-link:hover {
+    color: aqua;
+}

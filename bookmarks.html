@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bookmarks style.css">
+    <title>bookmarks</title>
+</head>
+
+<body onload="welcomingUser()">
+
+    <section class="">
+        <div class="d-flex text-center w-100 my-5">
+            <div class="w-25 m-auto">
+                <h1 class="header-title">Bookmarker</h1>
+            </div>
+
+            <div class="w-25 m-auto d-flex">
+                <div class="welcome-section" id="welcoming"></div>
+                <a href="Sign in.html" class="btn logout-btn btn-grad" onclick="logOut()">Log out <i class="fas fa-sign-out-alt"></i></a>
+            </div>
+        </div>
+
+        <div class="content text-center m-auto">
+            <h2 class="py-4 font-weight-bolder">Bookmark your favorite sites</h2>
+            <p class="py-3 font-weight-bold">Site Name</p>
+            <input class="form-control w-75 h-25 m-auto " type="text" id="siteName" placeholder="Bookmark Name">
+            <p class="py-3 font-weight-bold">Site URL</p>
+            <input class="form-control w-75 h-25 m-auto" type="text" id="urlSubmit" placeholder="Website URL">
+            <button class="btn btn-twitch my-3 px-4 py-2" id="addButton">Submit</button>
+            <p class="alert m-auto w-25">Data Required</p>
+
+            <input type="text" class="form-control w-50 m-auto" placeholder="Search bookmarks"
+                onkeyup="searchBookmarks(this.value)">
+        </div>
+        <div class="m-auto py-5" id="container"></div>
+    </section>
+
+    <footer>
+        <div class="w-75 m-auto">
+            <p class="footer-color">© 2019 Bookmarker Inc.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

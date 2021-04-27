@@ -1,0 +1,161 @@
+* {
+    font-family: arial;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: rgb(38, 38, 38);
+    background: -moz-linear-gradient(90deg, rgb(40, 0, 73) 50%, rgb(0, 13, 29) 100%);
+    background: -webkit-linear-gradient(90deg, rgb(40, 0, 73) 50%, rgb(0, 13, 29) 100%);
+    background: linear-gradient(90deg, rgb(40, 0, 73) 50%, rgb(0, 13, 29) 100%);
+}
+
+/*Header section*/
+
+h1 {
+    color: #EFEFF1;
+    font-family: arial;
+    font-weight: bold;
+}
+
+.welcome-section {
+    margin: auto;
+    background-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    padding-left: 50px;
+    border-radius: 20px;
+    animation-name: fadeing;
+    animation-duration: 1.5s;
+    font-style: italic;
+}
+
+/*Main section*/
+
+.content {
+    width: 73%;
+    background-color: transparent;
+    color: #EFEFF1;
+}
+
+.alert {
+    display: none;
+    margin-bottom: 10px !important;
+    background-color: #af424b;
+}
+
+/*Bookmarks*/
+
+.column {
+    width: 73%;
+    margin-top: 20px !important;
+    background-color: rgba(0, 0, 0, .3);
+    margin: 10px 0;
+    padding: 20px;
+    color: #EFEFF1;
+    border-radius: 10px;
+    transition: all 275ms;
+    background-image: linear-gradient(to right, #000000 0%, #53346D 51%, #000000 100%);
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 10px #53346D;
+}
+
+.column:hover {
+    transform: scale(1.04);
+    background-position: right center;
+    color: #fff;
+    animation-name: none;
+}
+
+/*Footer*/
+
+.footer-color {
+    color: #AAA;
+    font-family: arial;
+}
+
+/*Media quaries*/
+
+@media screen and (max-width: 600px) {
+    .btn-mine {
+        margin-top: 5px;
+    }
+}
+
+/*Inputs section*/
+
+input {
+    background: linear-gradient(to right, #120316, rgba(12, 0, 0, 0.396)) !important;
+    color: #fff !important;
+    border-radius: 5px !important;
+    position: relative;
+    border-color: transparent !important;
+}
+
+input:focus {
+    border-color: gray !important;
+    background-color: rgb(10, 10, 10) !important;
+}
+
+input:hover {
+    border: solid 1px gray !important;
+}
+
+/*Buttons section*/
+
+.btn-twitch {
+    background-image: linear-gradient(to right, #6441A5 0%, #2a0845 51%, #6441A5 100%);
+    background-size: 200% auto;
+    color: #fff;
+    transition: all .5s;
+    box-shadow: 0 0 2px #53346D;
+}
+
+.btn-twitch:hover {
+    background-position: right center;
+    color: #fff;
+    box-shadow: 0 0 12px #6000a0;
+}
+
+.logout-btn {
+    font-size: 17px;
+    font-style: italic;
+    background-image: linear-gradient(to right, #000000 0%, #53346D 51%, #000000 100%);
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 10px #53346D;
+}
+
+.logout-btn:hover {
+    background-position: right center;
+    color: #fff;
+    animation-name: shadow-play;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+/*Animations section*/
+
+@keyframes fadeing {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes shadow-play {
+    0% {
+        box-shadow: 0 0 5px rgb(0, 0, 0);
+    }
+    100% {
+        box-shadow: 0 0 12px rgb(167, 0, 233);
+    }
+}
